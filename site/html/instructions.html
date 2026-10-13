@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClassSync</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/icon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/icon32.png">
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="title">ClassSync</h1>
+  </header>
+  <section class="tab-container">
+    <button class="tab active" data-tab="written-instructions">Written Instructions</button>
+    <button class="tab" data-tab="video-demonstration">Video Demonstration</button>
+  </section>
+  <section id="written-instructions" class="content active">
+    <h2 class="subtitle">Extension Instructions</h2>
+    <ul class="instructions-list">
+      <li class="instruction">
+        Step 1: Clone extension repository from <a class="link" href="https://github.com/RyanHarang/ClassSync/tree/main"
+          target="_blank" rel="noopener noreferrer">ClassSync GitHub</a>
+      </li>
+      <li class="instruction">
+        Step 2: Open the Chrome Extensions page by typing
+        <code class="code">chrome://extensions/</code>
+        in your browser's address bar
+      </li>
+      <li class="instruction">
+        Step 3: Select 'Load Unpacked', then select the 'extension' folder from the cloned
+        repository
+      </li>
+      <li class="instruction">
+        Step 4: Navigate to <a class="link" href="https://wwu.instructure.com/profile/settings" target="_blank"
+          rel="noopener noreferrer">Canvas Settings</a> and select '+ New Access Token'
+      </li>
+      <li class="instruction">
+        Step 5: Enter your new Canvas API Token into the ClassSync extension and select 'Save'
+      </li>
+    </ul>
+  </section>
+  <section id="video-demonstration" class="content">
+    <h2 class="subtitle">Video Demonstration</h2>
+    <div class="video-container">
+      <video controls class="demo">
+        <source src="../assets/videos/classSyncDemo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  <footer></footer>
+  <script src="../js/tabbing.js"></script>
+</body>
+
+</html>

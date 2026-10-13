@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20vh;
+  align-items: center;
+  background-color: #253749;
+  font-family: Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.link {
+  color: white;
+  text-shadow:
+    0 0 5px #1478bb,
+    0 0 10px #1478bb,
+    0 0 20px #1478bb,
+    0 0 40px #1478bb,
+    0 0 80px #1478bb;
+}
+
+.link:hover {
+  outline: 2px solid #1478bb;
+}
+
+.code {
+  background-color: #1478bb;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: #253749;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab:hover,
+.tab:focus {
+  border-bottom: 2px solid #3990a9;
+}
+
+.tab.active {
+  border-bottom: 2px solid #1478bb;
+}
+
+.content.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  display: none;
+  color: white;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.instructions-list {
+  font-size: 1.2rem;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.instruction {
+  margin-bottom: 5px;
+}
+
+.video-container {
+  position: relative;
+  width: 75vw;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.demo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
